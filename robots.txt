@@ -1,5 +1,4 @@
-# robots.txt - INTERKL GLOBAL GROUP
 User-agent: *
 Allow: /
 
-Sitemap: https://interkl-global-group.w2k-digital.com/sitemap.xml
+Sitemap: https://interkl-global-group.com/sitemap.xml
