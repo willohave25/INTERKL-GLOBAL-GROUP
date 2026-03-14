@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auto-scroll.css">
 </head>
-<body>
+<body data-next-page="a-propos.html">
     <header class="header" id="header">
         <div class="container">
             <nav class="navbar">
@@ -50,7 +51,7 @@
         </div>
     </header>
 
-    <main class="page-dev">
+    <main class="page-dev" data-autoscroll data-pause-duration="10">
         <div class="page-dev-content">
             <div class="page-dev-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -111,5 +112,14 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/auto-scroll.js"></script>
+    <script>
+        W2KAutoScroll.init({
+            speed: 'slow',
+            pauseDuration: 10,
+            inactivityDelay: 45,
+            showIndicator: true
+        });
+    </script>
 </body>
 </html>
